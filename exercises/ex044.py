@@ -1,11 +1,19 @@
-#Leia um valor inteiro N que é a quantidade de casos de teste que vem a seguir. Cada caso de teste consiste de dois inteiros X e Y. Você deve apresentar a soma de todos os ímpares existentes entre X e Y.
+#Leia uma quantidade indeterminada de duplas de valores inteiros X e Y. Escreva para cada X e Y uma mensagem que indique se estes valores foram digitados em ordem crescente ou decrescente.
 
-n = int(input())
-soma = 0
+x = 1
+y = 0
+while x != y:
+  numbers = input()
+  numbers = numbers.split(' ')
+  x = int(numbers[0])
+  y = int(numbers[-1])
+  if x < y:
+    result = 'Crescente'
+  elif x > y:
+    result = 'Decrescente'  
+  else:
+    break
+  print(result)  
 
-for _ in range(n):
-  inteiros = input() #receber dois números inteiros (x e y)
-  inteiros = inteiros.split(' ')
-  x = int(inteiros[0])
-  y = int(inteiros [-1])
-  
+
+
