@@ -1,13 +1,19 @@
-#Beecrowd | 
-values = input().split()
-a = int(values[0])
-n = int(values[1])
-soma = 0
+#Beecrowd | 1150
+#recebe os valores x e z
+x = int(input())
+z = int(input())
 
-if n <= 0:
-  n = int(input())
+#repete o z até ele ser maior que x
+while z <= x:
+  z = int(input())
 
-for i in range(n):
-  soma += a + i
+#cria uma estrutura de repetição para calcular a quantidade de somas consecutivas necessárias para ultrapassar o z
+sum = x
+number = 0
+while sum < z:
+  sum += x + 1
+  x += 1
+  number += 1
 
-print(soma)
+print(number + 1)
+
