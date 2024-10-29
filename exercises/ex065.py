@@ -9,4 +9,5 @@ for index in range(1, n+1):
     max_index = index
   
 
-print(f'{max_number} \n{max_index}')
+print(max_number)
+print(max_index)
