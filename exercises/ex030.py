@@ -14,4 +14,4 @@ minutes_rest = seconds % 60
 seconds = minutes_rest
 
 #resultado 
-print(f'{hours}:{minutes}:{seconds}')
+print(f'{hours}:{minutes}:{seconds}') 
