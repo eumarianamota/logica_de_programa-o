@@ -1,11 +1,10 @@
 #Beecrowd |  1332
-count = 0
-
 def wrong_letters(guess_word, wright_word):
+  count = 0
   for i in range(len(guess_word)):
     if guess_word[i] != wright_word[i]:
       count += 1
-    return count
+  return count
 
 
 def guess_number(word):
@@ -22,6 +21,7 @@ words = int(input())
 
 while words > 0:
   words -= 1
+
   word = input().strip()
   number = guess_number(word)
   print(number)
