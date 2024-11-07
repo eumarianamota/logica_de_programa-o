@@ -1,7 +1,7 @@
 #Beecrowd | 1131
 #Função para verificar se a partida deu empate ou definir o vitorioso
 def vitoria(lista):
-  inteiros = [int(x) for x in lista]
+  inteiros = [int(x) for x in lista] #Fazer uma lista de numeros inteiros
   lista = inteiros
 
   if lista[0] > lista[-1]:
