@@ -12,14 +12,14 @@ for note in notes:
 
 #valores das moedas
 values_coins = []
-coins = [1, 0.50, 0.25, 0.10, 0.05, 0.01]
+coins = [1.0, 0.50, 0.25, 0.10, 0.05, 0.01]
 
 for coin in coins:
   values_coins.append(value // coin)
   value = value % coin
 
-values_coins = [int(coin) for coin in values_coins]
-values_notes = [int(note) for note in values_notes]
+values_coins = [int(coinns) for coinns in values_coins]
+values_notes = [int(notees) for notees in values_notes]
 
 print('NOTAS:')
 print(f'{values_notes[0]} nota(s) de R$ 100.00')
